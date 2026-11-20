@@ -1,0 +1,23 @@
+[project]
+name = "nonebot-adapter-wecom"
+version = "0.1.0"
+description = "NoneBot2 adapter for WeCom AI Bot over WebSocket"
+readme = "README.md"
+requires-python = ">=3.10,<4"
+keywords = ["nonebot", "wecom", "bot"]
+dependencies = [
+    "nonebot2>=2.5.0",
+    "pydantic>=1.10,<3",
+    "wecom-aibot-python-sdk>=1.0.2,<2",
+]
+
+[project.urls]
+Repository = "https://github.com/cqunews/nonebot-adapter-wecom"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "nonebot.adapters.wecom"
+module-root = ""
